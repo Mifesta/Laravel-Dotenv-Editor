@@ -1,6 +1,6 @@
 {
     "name": "mifesta/dotenv-editor",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "description": "The .env file editor tool for Laravel 5+",
     "license": "MIT",
     "keywords": [

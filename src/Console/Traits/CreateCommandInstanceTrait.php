@@ -2,7 +2,7 @@
 
 namespace Mifesta\DotenvEditor\Console\Traits;
 
-use Mifsta\DotenvEditor\DotenvEditor;
+use Mifesta\DotenvEditor\DotenvEditor;
 
 /**
  * Trait CreateCommandInstanceTrait
