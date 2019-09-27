@@ -66,7 +66,8 @@ class DotenvReader implements DotenvReaderContract
      * Get content of file
      *
      * @return string
-     */
+	 * @throws \Mifesta\DotenvEditor\Exceptions\UnableReadFileException
+	 */
     public function content()
     {
         $this->ensureFileIsReadable();
@@ -75,10 +76,11 @@ class DotenvReader implements DotenvReaderContract
     }
 
     /**
-     * Get informations of all lines from file content
+     * Get information of all lines from file content
      *
      * @return array
-     */
+	 * @throws \Mifesta\DotenvEditor\Exceptions\UnableReadFileException
+	 */
     public function lines()
     {
         $content = [];
@@ -98,10 +100,11 @@ class DotenvReader implements DotenvReaderContract
     }
 
     /**
-     * Get informations of all keys from file content
+     * Get information of all keys from file content
      *
      * @return array
-     */
+	 * @throws \Mifesta\DotenvEditor\Exceptions\UnableReadFileException
+	 */
     public function keys()
     {
         $content = [];
@@ -126,7 +129,8 @@ class DotenvReader implements DotenvReaderContract
      * Read content into an array of lines with auto-detected line endings
      *
      * @return array
-     */
+	 * @throws \Mifesta\DotenvEditor\Exceptions\UnableReadFileException
+	 */
     protected function readLinesFromFile()
     {
         $this->ensureFileIsReadable();

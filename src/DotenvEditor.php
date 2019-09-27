@@ -472,7 +472,9 @@ class DotenvEditor
      *
      * @param string|null $filePath
      * @return DotenvEditor
-     */
+	 * @throws \Mifesta\DotenvEditor\Exceptions\FileNotFoundException
+	 * @throws \Mifesta\DotenvEditor\Exceptions\NoBackupAvailableException
+	 */
     public function restore($filePath = null)
     {
         if (is_null($filePath)) {
